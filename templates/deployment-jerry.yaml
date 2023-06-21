@@ -16,7 +16,7 @@ spec:
       {{- with .Values.podAnnotations }}
       annotations:
         {{- toYaml . | nindent 8 }}
-        consul.hashicorp.com/service-meta-version: "jerry"
+        consul.hashicorp.com/Service-meta-version: "jerry"
       {{- end }}
       labels:
         {{- include "spring-sample.selectorLabels" . | nindent 8 }}
