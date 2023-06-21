@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "spring-sample.fullname" . }}
+  name: {{ include "spring-sample.fullname" . }}-jerry
   labels:
     {{- include "spring-sample.labels" . | nindent 4 }}
 spec:
@@ -16,6 +16,7 @@ spec:
       {{- with .Values.podAnnotations }}
       annotations:
         {{- toYaml . | nindent 8 }}
+        consul.hashicorp.com/service-meta-version: "jerry"
       {{- end }}
       labels:
         {{- include "spring-sample.selectorLabels" . | nindent 8 }}
