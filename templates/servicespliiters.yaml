@@ -4,7 +4,7 @@ metadata:
   name: {{ include "spring-sample.fullname" . }}
 spec:
   splits:
-    - serviceSubset: jerry
-      weight: 100
     - serviceSubset: tom
+      weight: 100
+    - serviceSubset: jerry
       weight: 0
