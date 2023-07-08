@@ -6,5 +6,5 @@ spec:
   splits:
     - serviceSubset: tom
       weight: 100
-    - serviceSubset: jerru
+    - serviceSubset: jerry
       weight: 0
