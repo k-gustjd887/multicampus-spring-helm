@@ -1,0 +1,10 @@
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceSplitter
+metadata:
+  name: config-entry-name
+spec:
+  splits:
+    - serviceSubset: tom
+      weight: 100
+    - serviceSubset: jerru
+      weight: 0
