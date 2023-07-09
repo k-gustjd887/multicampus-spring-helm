@@ -82,7 +82,7 @@ tolerations: []
 affinity: {}
 
 versionTom:
-  annotation: "tom"
+  annotation: "none"
 versionJerry:
   annotation: "jerry"
-targetVersion: "tom"
+targetVersion: "jerry"
