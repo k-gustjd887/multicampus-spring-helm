@@ -84,5 +84,5 @@ affinity: {}
 versionTom:
   annotation: "tom"
 versionJerry:
-  annotation: "jerry"
+  annotation: "none"
 targetVersion: "tom"
