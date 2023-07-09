@@ -85,3 +85,4 @@ versionTom:
   annotation: "tom"
 versionJerry:
   annotation: "jerry"
+targetVersion: "tom"
