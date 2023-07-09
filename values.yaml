@@ -87,4 +87,4 @@ versionTom:
 versionJerry:
   annotation: "jerry"
   tag: 17
-targetVersion: "jerry"
+targetVersion: "tom"
