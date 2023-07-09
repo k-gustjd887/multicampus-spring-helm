@@ -1,6 +1,6 @@
 {{ if ne .Values.versionJerry.annotation "none" }}
 {{- if .Values.autoscaling.enabled }}
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "spring-sample.fullname" . }}-jerry
