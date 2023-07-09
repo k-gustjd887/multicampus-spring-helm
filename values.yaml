@@ -83,6 +83,8 @@ affinity: {}
 
 versionTom:
   annotation: "none"
+  tag: 17
 versionJerry:
   annotation: "jerry"
+  tag: 17
 targetVersion: "jerry"
