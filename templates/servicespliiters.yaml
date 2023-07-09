@@ -4,7 +4,14 @@ metadata:
   name: {{ include "spring-sample.fullname" . }}
 spec:
   splits:
+    {{ if eq .Values.targetVersion "tom" }}
+    - serviceSubset: tom
+      weight: 100
+    - serviceSubset: jerry
+      weight: 0
+    {{ else }}
     - serviceSubset: jerry
       weight: 100
     - serviceSubset: tom
       weight: 0
+    {{ end }}
