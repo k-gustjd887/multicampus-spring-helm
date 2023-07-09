@@ -85,6 +85,6 @@ versionTom:
   annotation: "tom"
   tag: 17
 versionJerry:
-  annotation: "jerry"
+  annotation: "none"
   tag: 17
 targetVersion: "tom"
