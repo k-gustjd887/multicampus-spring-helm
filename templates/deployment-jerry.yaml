@@ -11,7 +11,7 @@ spec:
   {{- end }}
   selector:
     matchLabels:
-      {{- include "spring-sample.selectorLabels" . | nindent 6 }}
+      {{- include "spring-sample.selectorLabels" . | nindent 6 }}-jerry
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -20,7 +20,7 @@ spec:
         consul.hashicorp.com/service-meta-version: "jerry"
       {{- end }}
       labels:
-        {{- include "spring-sample.selectorLabels" . | nindent 8 }}
+        {{- include "spring-sample.selectorLabels" . | nindent 8 }}-jerry
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
